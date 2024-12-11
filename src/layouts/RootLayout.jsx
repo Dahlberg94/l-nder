@@ -50,7 +50,9 @@ const RootLayout = () => {
       <header>
         <nav className="navbar">
           
-          <a href="http://localhost:5173/" className="homeLink" >The Flag App</a>
+        <Link to="/" className="homeLink">
+            The Flag App
+          </Link>
           {}
           <img
             src={theme === "light" ? logoLight : logoDark}
