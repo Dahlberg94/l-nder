@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, NavLink, Link } from "react-router-dom";
-import logoLight from "../assets/Marcus-Svart.png";
-import logoDark from "../assets/Marcus-Lila.png";
+import logoLight from "../assets/techover-logo-dark.png";
+import logoDark from "../assets/techover-logo.png";
 import logoSun from "../assets/sun.png";
 import logoMoon from "../assets/moon.png";
 
@@ -13,11 +13,11 @@ const RootLayout = () => {
     localStorage.setItem("theme", theme);
     document.body.className = theme;
 
-    // Trigger animation when theme changes
+
     setAnimate(true);
     const timeoutId = setTimeout(() => {
       setAnimate(false);
-    }, 1000); // Reset animation state after 1 second
+    }, 1000); // Reset animation after 1 second
 
     return () => clearTimeout(timeoutId);
   }, [theme]);
@@ -49,7 +49,9 @@ const RootLayout = () => {
     <div className={`Root-Layout ${theme}`}>
       <header>
         <nav className="navbar">
-          <h1>The Flag App</h1>
+          
+          <a href="http://localhost:5173/" className="homeLink" >The Flag App</a>
+          {}
           <img
             src={theme === "light" ? logoLight : logoDark}
             alt="logo"
@@ -64,7 +66,7 @@ const RootLayout = () => {
           >
             <div className="logo-container">
               <div className="logo-switch-container">
-                {/* Light Mode: Sun icon slides in, Moon slides out */}
+                {}
                 <img
                   src={logoMoon}
                   alt="logo"

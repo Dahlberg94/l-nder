@@ -12,18 +12,45 @@
 body.light {
   background-color: #ffffff;
   color: #000000;
-  background: #bbb6b6;
+  background: rgb(255, 255, 255);
   button-color: black;
-  --header-background: #9e9a9a;
+  --header-background: rgb(255, 255, 255);
+  --country-item: rgb(255, 255, 255);
+  --homeLink: black;
+  --region: ;
+  --searchBar: ;
+  --country-text: gray;
+  --headerFade: rgb(170, 155, 155);
+  --borderlist: rgba(216, 216, 223, 0.699);
+  --borderCountries:rgb(196, 196, 201);
 }
 
 body.dark {
-  background-color: #1e1e1e;
-  color: #690CFE;
-  background: #202020;
-  button-color: #690CFE;
-  --header-background: #302f2f;
+  background-color: rgb(32, 44, 54);
+  color: whitesmoke;
+  background: rgb(38, 52, 63);
+  button-color: white;
+  --header-background:rgb(56, 72, 87);
+  --country-item: #5b6270;
+  --homeLink: ;
+  --searchBar: rgb(138, 134, 134) ;
+  --region: whitesmoke ;
+  --country-text: whitesmoke;
+  --headerFade: rgb(31, 30, 30);
+  --borderlist: rgba(231, 227, 227, 0.288);
+  --borderCountries:rgba(245, 238, 238, 0.425);
 }
+
+/* CountryList */
+
+.country-item {
+  background-color: var(--country-item);
+  color: var(--country-text);
+}
+
+
+
+/*  */
 
 body {
   margin: 0;
@@ -35,11 +62,35 @@ body {
   margin: 0;
 }
 
+.linksCard {
+  text-decoration: none;
+}
+
 p {
   margin: 20px 0;
 }
 
 /* Header/Navbar */
+.homeLink {
+  text-decoration: none;
+  color: var(--homeLink);
+  font-size: 23px;
+}
+
+.regionDropdown {
+  border-color: var(--searchBar);
+  color: var(--region);
+  background-color: transparent;
+}
+
+.regionDropdown option {
+  background-color: var(--country-item);
+}
+
+.searchBar {
+  border-color: var(--searchBar);
+}
+
 .modeButton {
   position: relative;
   display: flex;
@@ -69,7 +120,7 @@ p {
   position: absolute;
   border: 50%;
   transform: scale(0);
-  background-color: #690CFE;
+  background-color: rgb(88, 82, 82);
   animation: ripple 0.6s linear;
   pointer-events: none;
   border-radius: 50%;
@@ -109,11 +160,11 @@ p {
 
 
 .Root-Layout.light .logo__switch:first-child {
-  transform: translateX(-100%); /* Start moon off-screen to the left */
+  transform: translateX(-100%); 
 }
 
 .Root-Layout.dark .logo__switch:last-child {
-  transform: translateX(100%); /* Start sun off-screen to the right */
+  transform: translateX(100%); 
 }
 
 .slide-out-right {
@@ -150,9 +201,9 @@ header {
   max-width: 100%;
   margin: 0px auto;
   padding: 20px auto;
-  height: 100px;
+  height: 70px;
   background-color: var(--header-background);
-  box-shadow: 0 4px 10px #44444483 ;
+  box-shadow: 0px 0px 5px 4px var(--headerFade) ;
 }
 
 .navbar {
@@ -165,3 +216,32 @@ header {
 }
 
 /* Header/Navbar End */
+
+
+/* Details */
+
+
+
+
+.borderlista {
+  background-color: var(--borderlist);
+  
+}
+
+.borderlista:hover {
+  background-color: var(--borderCountries); 
+  }
+  
+
+
+  .detailsinfo {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detailsinfo p {
+    margin: 5px 0;
+    line-height: 1.5; 
+  }
+  

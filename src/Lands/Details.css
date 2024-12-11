@@ -1,0 +1,126 @@
+.country-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: -100px;
+    gap: 70px;
+}
+
+.flagga {
+    border-radius: 20px;
+    width: 50vh;
+}
+
+.borderulist {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.infoD {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.borderlista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 0px 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.details-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.border-scroll {
+    max-width: 370px;
+    overflow-x: auto;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.border-scroll ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.border-scroll li {
+    margin-right: 10px;  
+    margin-bottom: 10px;
+}
+
+.border-scroll a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px 10px;
+}
+
+.borderlista a {
+    color: inherit; 
+    text-decoration: none; 
+}
+.border-scroll a:hover {
+    
+}
+
+.details-info {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.border-countries {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+/* Skeleton */
+
+.skeleton-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .skeleton-flag-info {
+    background-color: #c1c1c1;
+    width: 50vh;
+    height: 250px;
+    border-radius: 20px;
+  }
+  
+  .skeleton-details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+  
+  .skeleton-info {
+    background-color: #c1c1c1;
+    width: 80%;
+    height: 16px;
+    margin: 8px 0;
+    border-radius: 4px;
+  }

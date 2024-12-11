@@ -1,0 +1,141 @@
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    padding-top: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+
+.regionDropdown {
+    height: 60px;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 150px;
+    border: solid 1px;
+    font: inherit;
+    letter-spacing: inherit;
+}
+
+.searchBar {
+    height: 60px;
+    width: 30%;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    letter-spacing: inherit;
+    font: inherit;
+    box-sizing: content-box;
+    border: 1px solid;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.country-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    padding: 0px;
+    box-shadow: 0px 4px 10px rgb(65, 62, 62);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+
+.countrues-container-info {
+    text-align: left;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.countrues-container-info p {
+    color: inherit;
+}
+
+.country-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-flag {
+    width: 100%;
+    max-width: 300px;
+    height: 140px;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.country-capital,
+.country-region, 
+.country-population {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Skeletoon */
+
+.skeleton-country-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  padding: 0px;
+  box-shadow: 0px 4px 10px rgb(65, 62, 62);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skeleton-flag {
+    background-color: #c1c1c1;
+    width: 100%;
+    height: 140px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .skeleton-text {
+    background-color: #c1c1c1;
+    width: 60%;
+    height: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #f0f0f0;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
