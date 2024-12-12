@@ -84,10 +84,10 @@ const CountryList = () => {
         <input
           type="search"
           className="searchBar"
-          placeholder="search for a country"
+          placeholder="search for a country..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        > </input>
         <select className="regionDropdown" value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)}>
             <option value="">All Regions</option>
             {regions.map((region) => (

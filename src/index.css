@@ -12,6 +12,7 @@
 body.light {
   background-color: #ffffff;
   color: #000000;
+  --text:#000000;
   background: rgb(255, 255, 255);
   button-color: black;
   --header-background: rgb(255, 255, 255);
@@ -20,14 +21,17 @@ body.light {
   --region: ;
   --searchBar: ;
   --country-text: gray;
-  --headerFade: rgb(170, 155, 155);
+  --headerFade: rgba(170, 155, 155, 0.336);
   --borderlist: rgba(216, 216, 223, 0.699);
   --borderCountries:rgb(196, 196, 201);
+  --arrow-logo: url("./assets/arrow-left-dark.svg");
+  --phone-filter: ;
 }
 
 body.dark {
   background-color: rgb(32, 44, 54);
   color: whitesmoke;
+  --text:whitesmoke;
   background: rgb(38, 52, 63);
   button-color: white;
   --header-background:rgb(56, 72, 87);
@@ -36,9 +40,16 @@ body.dark {
   --searchBar: rgb(138, 134, 134) ;
   --region: whitesmoke ;
   --country-text: whitesmoke;
-  --headerFade: rgb(31, 30, 30);
+  --headerFade: rgba(31, 30, 30, 0.322);
   --borderlist: rgba(231, 227, 227, 0.288);
   --borderCountries:rgba(245, 238, 238, 0.425);
+  --arrow-logo: url("./assets/arrow-left.svg");
+  --phone-filter: #5b6270;
+}
+
+.arrowButton img {
+  content: var(--arrow-logo);
+  background-image: var(--arrow-logo);
 }
 
 /* CountryList */
@@ -68,6 +79,7 @@ body {
 
 p {
   margin: 20px 0;
+  color: var(--text);
 }
 
 /* Header/Navbar */
@@ -125,6 +137,11 @@ p {
   pointer-events: none;
   border-radius: 50%;
 }
+.searchBar {
+  color: var(--country-text);
+  padding: 0px 0px 0px 10px;
+}
+
 
 @keyframes ripple {
   to {
@@ -245,3 +262,86 @@ header {
     line-height: 1.5; 
   }
   
+
+
+
+
+
+  @media only screen and (max-width: 480px) {
+    
+    body {
+      
+    }
+
+
+
+    /* Header */
+
+  .homeLink {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    display: none;
+    width: 0px;
+  }
+
+  .logo-container {
+    width: 20px;
+    padding-right: 20px;
+  }
+
+  /* Loader */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .filter {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .regionDropdown {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: ;
+    background-color: var(--phone-filter) ;
+    color: var(--country-text);
+  }
+
+  .regionDropdown option {
+    gap: 10px;
+  }
+
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    max-width: 300px;
+    margin: auto;
+}
+
+  .searchBar {
+    width: 330px;
+    padding: 0px 0px 0px 10px;
+    background-color: var(--phone-filter) ;
+    color: var(--country-text);
+  }
+  .searchBar::placeholder {
+    color: var(--country-text);
+    
+  }
+
+  
+
+
+
+
+
+  }

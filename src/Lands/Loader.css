@@ -31,6 +31,7 @@
     font: inherit;
     box-sizing: content-box;
     border: 1px solid;
+    padding-left:;
 }
 
 .container {
@@ -38,13 +39,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0px;
+    align-items: center;
+    width: 1200px;
 }
 
 .countries-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0px;
 }
 
 .country-item {
@@ -54,7 +62,7 @@
     text-align: left;
     border-radius: 8px;
     height: 300px;
-    width: 300px;
+    width: auto;
     padding: 0px;
     box-shadow: 0px 4px 10px rgb(65, 62, 62);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

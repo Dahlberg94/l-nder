@@ -1,11 +1,41 @@
 .country-details {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     height: 100vh;
-    margin-top: -100px;
-    gap: 70px;
+    gap: 120px;
+    max-width: 1200px;
+    margin: auto;
+}
+.buttonArr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    top: 170px;
+}
+.arrowButton{
+    align-items: center;
+    gap: 5px;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex; /* Gör den till en flex-container */
+    cursor: pointer;
+}
+.arrowButton img {
+    width: 20px; /* Anpassa bildens storlek */
+    height: 20px;
+    display: inline-block;
+}
+
+.arrowButton p {
+    font-size: 18px;
 }
 
 .flagga {
@@ -123,4 +153,79 @@
     height: 16px;
     margin: 8px 0;
     border-radius: 4px;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+
+  /* Details */
+
+  .country-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    align-items: flex-start;
+  }
+
+  .buttonArr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    top: 100px;
+    left: 20px;
+}
+
+.flagga {
+    width: 42vh;
+    border-radius: 10px;
+}
+
+.flag-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  margin-top: 10px;
+}
+
+.infoD {
+    flex-direction: column;
+    margin-left: 0px;
+    gap: 10px;
+    margin-top: -90px;
+}
+
+
+.details-info{
+    flex-direction: column;
+    gap: 20px;
+}
+
+p {
+    font-size: 13px;
+}
+
+.border-scroll {
+    max-width: 350px;
+    overflow-x: auto;
+    margin-left: 0px;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.border-countries{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.border-countries h2 {
+    font-size: 15px;
+}
+
+
   }

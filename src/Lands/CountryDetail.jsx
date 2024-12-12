@@ -2,6 +2,13 @@ import { Link, useParams, useLoaderData } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import "../index.css";
 import "./Details.css";
+import logoLight from "../assets/arrow-left.svg"
+
+
+
+
+
+
 
 const CountryDetails = () => {
   const { name } = useParams();
@@ -47,7 +54,18 @@ const CountryDetails = () => {
   const borders = country.borders || [];
 
   return (
+    
     <div className="country-details">
+      <div className="buttonArr">
+      <Link to="/" className="homeLink">
+      <button className="arrowButton" >
+          <img src={logoLight} alt=""  />  
+         
+          <p>Back</p>
+          </button>
+          </Link>
+      </div>
+
       <div className="flag-info">
         <img
           className="flagga"
