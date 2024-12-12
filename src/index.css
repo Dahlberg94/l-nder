@@ -317,6 +317,7 @@ header {
 
   .regionDropdown option {
     gap: 10px;
+    padding: ;
   }
 
   .countries-container {
