@@ -269,10 +269,6 @@ header {
 
   @media only screen and (max-width: 480px) {
     
-    body {
-      
-    }
-
 
 
     /* Header */
@@ -310,14 +306,12 @@ header {
 
   .regionDropdown {
     padding: 0px 0px 0px 10px;
-    margin-bottom: ;
     background-color: var(--phone-filter) ;
     color: var(--country-text);
   }
 
   .regionDropdown option {
     gap: 10px;
-    padding: ;
   }
 
   .countries-container {
