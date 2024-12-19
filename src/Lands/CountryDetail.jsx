@@ -57,7 +57,7 @@ const CountryDetails = () => {
     
     <div className="country-details">
       <div className="buttonArr">
-      <Link to="/" className="homeLink">
+      <Link to="/" className="homeLinkButton" id="linkbuttoon">
       <button className="arrowButton" >
           <img src={logoLight} alt=""  />  
          
@@ -69,7 +69,7 @@ const CountryDetails = () => {
       <div className="flag-info">
         <img
           className="flagga"
-          src={country.flags.png}
+          src={country.flags.svg}
           alt={`${country.name.common} flag`}
         />
       </div>

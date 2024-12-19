@@ -1,14 +1,28 @@
 .country-details {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 200px;
     justify-content: flex-start;
     flex-direction: row;
     height: 100vh;
-    gap: 120px;
+    gap: 50px;
     max-width: 1200px;
     margin: auto;
 }
+
+.homeLinkButton {
+    text-decoration: none;
+    color: var(--homeLink);
+    font-size: 23px;
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
 .buttonArr {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -162,6 +176,9 @@
 
   .country-details {
     display: flex;
+    align-items: center;
+    padding-top: 1%;
+    gap: 120px;
     justify-content: center;
     flex-direction: column;
     max-width: 350px;

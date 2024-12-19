@@ -82,7 +82,6 @@ const CountryList = () => {
     <div className="container">
       <div className="filter">
         <input
-          type="search"
           className="searchBar"
           placeholder="search for a country..."
           value={searchTerm}
@@ -102,7 +101,7 @@ const CountryList = () => {
           <Link to={`/country/${country.name.common}`} key={country.cca3} className="linksCard" >
           <div className="country-item">
             <img
-              src={country.flags.png}
+              src={country.flags.svg}
               alt={`${country.name.common} flag`}
               className="country-flag"
             />
